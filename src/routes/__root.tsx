@@ -7,6 +7,7 @@ import Header from '../components/Header'
 
 import { authClient } from '@/lib/auth-client'
 import { useEffect } from 'react'
+import { Toaster } from 'sonner'
 import appCss from '../styles.css?url'
 
 export const Route = createRootRoute({
@@ -54,6 +55,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {session?.user && <Header />}
+        <Toaster />
         {children}
         <TanStackDevtools
           config={{

@@ -1,5 +1,5 @@
 import { prisma } from '@/db'
-import { Prisma } from 'generated/prisma/client'
+import { Prisma } from '@/generated/prisma/client'
 import { _ingredients, categories, products } from './constants'
 
 const randomDecimalNumber = (min: number, max: number) => {
